@@ -12,4 +12,8 @@ def projects():
 
 @application.route('/contacts')
 def contacts():
-    return render_template('contacts.html',title='contacts',pos='contacts')
+    return render_template('contacts.html',title='Contact',pos='contacts')
+
+@application.route('/techstack')
+def techstack():
+    return render_template('techstack.html',title='TechStack',pos='techstack')

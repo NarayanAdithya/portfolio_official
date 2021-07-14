@@ -1,14 +1,64 @@
 {% extends 'template.html' %}
 
+{% block css_links %}
+<link rel="stylesheet" href="assets/static/css/cube.css">
+{% endblock %}
 {% block body %}
-
-<div class="text-center" style="margin-top: 60px;margin-right: 0;margin-left: 0;padding-right: 20px;padding-left: 20px;">
-    <div class="text-center profile-card" style="margin: 15px;background: #e5e7e7;padding: 10px;">
-                <div class='tableauPlaceholder' id='viz1626247774561' style='position: relative'>
+<div class="container">
+   
+<div class="text-center" style="margin-top: 60px;margin-right: 5%;margin-left: 5%;padding-right: 20px;padding-left: 20px;">
+    <div class="text-center profile-card" style="margin: 15px;background: #EAF0CE;padding: 10px;margin-right: 0.5%;margin-left: 0.5%;">
+        <div>
+            <h2 style="font-family: Andika, sans-serif;">My Projects</h2>
+        </div>
+        <div style="margin-top: 0;">
+            <h3 class="text-left" style="margin-top: 30px;margin-right: 10%;margin-left: 10%;">1.CELIS</h3>
+            <p style="margin-top: 10;text-align: justify;margin-right: 10%;margin-left: 10%;font-family: Andika, sans-serif;font-size: 20px;"><strong>DESCRIPTION: </strong>CELIS is a website that acts as an central platform that connects to various other<strong> </strong>educational platforms like Coursera, Udemy etc. The website is aimed at finding the right course for a person in the most optimized manner. This is a group project and I worked on the Backend using <strong>Python-Flask</strong> and integrated the Recommender System into the final website deployed on <strong>Heroku</strong>.</p>
+        </div>
+        <div style="margin-top: 0;">
+            <h3 class="text-left" style="margin-top: 30px;margin-right: 10%;margin-left: 10%;">2.Elevate</h3>
+            <p style="margin-top: 10;text-align: justify;margin-right: 10%;margin-left: 10%;font-family: Andika, sans-serif;font-size: 20px;"><strong>DESCRIPTION: </strong>This is an ongoing project and involves use of 3 AI models inorder to detect depression using the <strong>DAIC-WOZ</strong> dataset. More information will be disclosed soon.</p>
+        </div>
+        <div style="margin-top: 0;">
+            <h3 class="text-left" style="margin-top: 30px;margin-right: 10%;margin-left: 10%;">3.Retail Sales Data Analysis Using Tableau</h3>
+            <p style="margin-top: 10;text-align: justify;margin-right: 10%;margin-left: 10%;font-family: Andika, sans-serif;font-size: 20px;"><strong>DESCRIPTION: </strong>This was a task given to me and my first time using tableau, this is how i  entered the field of data vizualisation.Below is the Tableau Dashboard I created and beneath that is the analysis video. Do check it out.</p>
+            
+        </div>
+       
+        <div>
+            <div class='tableauPlaceholder' id='viz1626247774561' style='position: relative'>
                 <noscript><a href='#'><img alt='TSF Task 3 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sa&#47;SampleSuperStoreAnalysis_16255658412580&#47;TSFTask3&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='SampleSuperStoreAnalysis_16255658412580&#47;TSFTask3' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sa&#47;SampleSuperStoreAnalysis_16255658412580&#47;TSFTask3&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1626247774561');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>    
-    
+        
+        </div>
+        <br>
+
+        <div>
+            <h3 class="text-left" style="margin-top: 30px;margin-right: 10%;margin-left: 10%;">My Analysis Video: </h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ep91za2LUDg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div style="margin-top: 0;">
+            <h3 class="text-left" style="margin-top: 30px;margin-right: 10%;margin-left: 10%;">4. Minor Projects</h3>
+            <ul style="margin-right: 10%;margin-left: 10%;">
+                <li style="text-align: left;">Gantt-Chart-Renderer, A free interactive plotly chart rendered</li>
+                <li style="text-align: left;">Youtube Comment Spam Detector</li>
+                <li style="text-align: left;">Facial Expression Recognition App Using Flask, Keras Integration</li>
+                <li style="text-align: left;">Simple Real Time Chat Application using Flask-Socketio</li>
+                <li style="text-align: left;">Multiple Database Flask Projects - MySQL, PostgreSQL, MongoDB</li>
+                <li style="text-align: left;">Other Dashboards and stuffs</li>
+            </ul>
+        </div>
+        <div>
+            <h2 style="font-family: Andika, sans-serif;">My Tech Stack</h2>
+        </div>
+       
+             </div>
+   
+            
+   
+           </div>
+       
         
     </div>
 </div>
-
 {% endblock %}
+
