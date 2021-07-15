@@ -4,6 +4,21 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    
+    <link rel="apple-touch-icon" sizes="57x57" href="static/assets/img/circle-cropped.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="static/assets/img/circle-cropped.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="static/assets/img/circle-cropped.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="static/assets/img/circle-cropped.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="static/assets/img/circle-cropped.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="static/assets/img/circle-cropped.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="static/assets/img/circle-cropped.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="static/assets/img/circle-cropped.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="static/assets/img/circle-cropped.png">
+    <link rel="icon" type="image/png" href="static/assets/img/circle-cropped.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="static/assets/img/circle-cropped.png" sizes="160x160">
+    <link rel="icon" type="image/png" href="static/assets/img/circle-cropped.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="static/assets/img/circle-cropped.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="static/assets/img/circle-cropped.png" sizes="32x32">
     <title>{{title}}</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="{{url_for('static',filename='assets/css/navbarawesome.css')}}">
@@ -18,6 +33,7 @@
     <link rel="stylesheet" href="static/assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="static/assets/fonts/ionicons.min.css">
     <link rel="stylesheet" href="static/assets/css/footer.css">
+    <link rel="stylesheet" href="static/assets/css/loader.css">
     {% block css_links %}
     {% endblock %}
 </head>
@@ -71,15 +87,26 @@
             </ul>
         </div>
     </nav>
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+     
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+     
+    </div>
     {% block body %}
 	
 	{% endblock %}
 	
     {% block js_scripts %}
+    <script>
+        
+    </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="static/assets/js/navbar.js"></script>
+<script src="static/assets/js/loader.js"></script>
     {% endblock %}
     <footer class="footer-basic" style="background: #EAF0CE;margin-bottom: -92px;padding-bottom: 12px;">
         <div class="social" style="margin-top: -34px;margin-bottom: 0px;"><a target="_blank" href="https://github.com/NarayanAdithya" ><i  class="icon ion-social-github"></i></a><a target="_blank" href="https://www.linkedin.com/in/adithya-narayan-3747081a3"><i  class="icon ion-social-linkedin"></i></a><a target= "_blank" href="https://www.instagram.com/a.dity.a_n.araya.n/"><i class="icon ion-social-instagram"></i></a><a target="_blank" href="https://www.facebook.com/adithya.narayan.96"><i class="icon ion-social-facebook"></i></a></div>

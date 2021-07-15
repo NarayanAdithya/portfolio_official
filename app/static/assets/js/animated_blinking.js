@@ -7,9 +7,10 @@ jQuery(document).ready(function($) {
         selectionDuration = 500,
         typeAnimationDelay = selectionDuration + 800,
         revealDuration = 600,
-        revealAnimationDelay = 1500;
+        revealAnimationDelay = 500;
     initHeadline();
     function initHeadline() {
+
         singleLetters($(".cd-headline.letters").find("b"));
         animateHeadline($(".cd-headline"))
     }
