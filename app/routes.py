@@ -1,6 +1,5 @@
 from app import application,models
-from flask import request,redirect,url_for,render_template,flash,get_flashed_messages,jsonify
-
+from flask import request,redirect,url_for,render_template
 @application.route('/')
 @application.route('/home')
 def home():
@@ -19,3 +18,7 @@ def contacts():
 @application.route('/techstack')
 def techstack():
     return render_template('techstack.html',title='TechStack',pos='techstack')
+
+@application.errorhandler(404)
+def page_not_found(e):
+    return render_template('404.html'), 404
